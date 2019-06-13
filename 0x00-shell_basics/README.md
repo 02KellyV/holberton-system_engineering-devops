@@ -1,6 +1,6 @@
 # Excutable file
 
-- Leanr about working directory:
+- Learn about working directory:
   - print it
   - change it
   - home 
