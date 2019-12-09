@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash Script that uses ssh to connect using private key: ~/.ssh/holberton, user ubuntu
+# My server: New No.-web-01, ubuntu, 34.73.228.13
+# ssh -norute- ubuntu@34.73.228.13 it doesn't work 
+ssh -i ~/.ssh/holberton ubuntu@34.73.228.13
