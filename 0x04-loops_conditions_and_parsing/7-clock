@@ -6,8 +6,8 @@
 hrs=0
 
 while [ $hrs -le 12 ];
-	do
-        echo "hrs: $hrs"
+    do
+        echo "Hour: $hrs"
         hrs=$((hrs+1))
         mins=1
         while [ $mins -le 59 ]; do
