@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash script display information about subdomains
+# Bash script display subdomains info
 if [ $# -eq 1 ]
 	then
 		subd='www lb-01 web-01 web-02'
