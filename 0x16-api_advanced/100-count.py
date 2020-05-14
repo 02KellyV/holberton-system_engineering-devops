@@ -35,5 +35,3 @@ def count_words(subreddit, word_list, after="", counter={}, t=0):
                     print('{}: {}'.format(key, value))
     except Exception:
         return None
-
-
