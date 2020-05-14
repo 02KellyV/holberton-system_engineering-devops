@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-""" Recursive funct: queries the Reddit API, parses title
-    hot articles, prints sorted count keywords: case-insensitive
-    delimited by spaces, Javascript = javascript but not java
-"""
+""" Counts Keywords """
 from requests import get
 from sys import argv
 
 
 def count_words(subreddit, word_list, after="", counter={}, t=0):
-    """count keywords and print a by sorted count"""
+    """ Recursive funct: queries the Reddit API, parses title
+        hot articles, prints sorted count keywords:
+        case-insensitive
+        delimited by spaces, Javascript = javascript
+        but not java
+    """
     if t == 0:
         for word in word_list:
             counter[word] = 0
