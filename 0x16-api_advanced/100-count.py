@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-"""Recursive function that queries the Reddit API
-   Parses the title of all hot articles
-   Prints a sorted count of given keywords:
-       case-insensitive
-       delimited by spaces
-       Javascript should count as javascript
-       but java should not
+""" Recursive funct: queries the Reddit API, parses title
+    hot articles, prints sorted count keywords: case-insensitive
+    delimited by spaces, Javascript = javascript but not java
 """
 from requests import get
 from sys import argv
 
 
 def count_words(subreddit, word_list, after="", counter={}, t=0):
-    """count and print a sorted list"""
+    """count keywords and print a by sorted count"""
     if t == 0:
         for word in word_list:
             counter[word] = 0
