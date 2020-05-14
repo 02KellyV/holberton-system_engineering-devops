@@ -10,7 +10,8 @@ def top_ten(subreddit):
     URL = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     Headers = {"User-Agent": "Custom"}
     payload = {"limit": "10"}
-    hot = requests.get(URL, headers=Headers, params=payload, allow_redirects=False)
+    hot = requests.get(URL, headers=Headers, params=payload,
+                       allow_redirects=False)
     if hot.status_code != 200:
         print("None")
     else:
