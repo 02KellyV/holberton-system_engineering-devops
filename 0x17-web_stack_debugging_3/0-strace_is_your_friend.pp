@@ -1,5 +1,6 @@
 #Apache is returning a 500 error, Fix Issue
 exec {'automate_fix_500Issue':
   path    => ['/bin'],
-  command => "sed -i 's/phpp/php/g' /var/www/html/wp-settings.php && service apache2 reload"
+  command => "sed -i 's/phpp/php/g' /var/www/html/wp-settings.php \
+&& service apache2 reload"
 }
